@@ -19,8 +19,4 @@
 .section-content {
 	max-width: 920px;
 	margin: 0 auto;
-
-	/* Clearfixing section-content */
-	content: "";
-	display: table;
 }
