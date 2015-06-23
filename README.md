@@ -2,7 +2,7 @@
 
 ## Description
 
-This plugin
+This plugin places arbitarily many full TinyMCE windows in the post editor for Pages. The intent is to allow multiple sections with full-width backgrounds -- as used in, for example, parallax themes -- without sacrificing the user experience.
 
 ## Notes and Gotchas
 
