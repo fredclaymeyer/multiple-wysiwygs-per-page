@@ -1,0 +1,22 @@
+/* Elements from ITP Page Sections plugin */
+.page-section {
+	padding: 3em 0;
+}
+
+.page-section.white {
+	background: #fff;
+}
+
+.page-section.blue {
+	background: #5d88a8;
+	color: #fff;
+}
+
+.page-section.gray {
+	background: #f4f4f4;
+}
+
+.section-content {
+	max-width: 920px;
+	margin: 0 auto;
+}
