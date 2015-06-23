@@ -15,22 +15,20 @@ get_header(); ?>
 							</div>
 						</section>
 
-						<?php			
-							$wysiwygs = get_post_meta( get_the_ID(), '_wpshout_wysiwyg', true );
+						<?php $wysiwygs = get_post_meta( get_the_ID(), '_wpshout_wysiwyg', true );
 
-							if (is_array($wysiwygs)) :
-								foreach( $wysiwygs as $key => $wysiwyg ) : ?>
+						if (is_array($wysiwygs)) :
+							foreach( $wysiwygs as $key => $wysiwyg ) : ?>
 
-									<section class="page-section<?php if( $wysiwyg['color'] ) { echo ' ' . $wysiwyg['color']; } ?>">
-										<div class="section-content">
-											<h2><?php if( $wysiwyg['title'] ) { echo $wysiwyg['title']; } ?></h2>
-											<?php echo wpautop( $wysiwyg['content'] ); ?>
-										</div>
-									</section>
-								
-								<?php endforeach;
-							endif;
-						?>
+								<section class="page-section<?php if( $wysiwyg['color'] ) { echo ' ' . $wysiwyg['color']; } ?>">
+									<div class="section-content">
+										<h2><?php if( $wysiwyg['title'] ) { echo $wysiwyg['title']; } ?></h2>
+										<?php echo wpautop( $wysiwyg['content'] ); ?>
+									</div>
+								</section>
+							
+							<?php endforeach;
+						endif; ?>
 					</div>
 				</article>
 				<!-- ***End custom part*** -->
